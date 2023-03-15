@@ -17,8 +17,8 @@ Presents a iPhone mockup presenting interval updating to notifications. Each not
 Notifications with 0 do not show any information but anything above 0 will show either next to the app name or above the icon depending on which mode you're viewing 
 
 # Desktop Version
-(https://github.com/nancyxie97/iphone-screen-notification/blob/master/src/assets/desktop.png)
+![Desktop](https://github.com/nancyxie97/iphone-screen-notification/blob/master/src/assets/desktop.png)
 
 # Mobile Version
-(https://github.com/nancyxie97/iphone-screen-notification/blob/master/src/assets/mobile.png)
+![Mobile](https://github.com/nancyxie97/iphone-screen-notification/blob/master/src/assets/mobile.png)
 
