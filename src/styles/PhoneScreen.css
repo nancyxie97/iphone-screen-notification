@@ -1,0 +1,102 @@
+.PhoneScreen{
+    width: 30em;
+    height: 60em;
+    background-color: black;
+    background-image: url('../assets/phonescreenbg.jpeg');
+    background-position: center center;
+    border-radius: 50px;
+    border: 12px solid black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 20px 15px #33333335;
+    flex-direction: column;
+
+}
+.notch{
+    z-index: 100;
+    /* top:0;
+    left: 62px;
+    position: absolute; */
+    background-color: black;
+    width: 200px;
+    height: 30px;
+    border-radius: 0px 0px 20px 20px;
+
+    
+}
+.HomeScreen{
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    opacity: 1;
+    justify-content: center;
+    /* flex-flow: column nowrap; */
+    
+    
+ /* background-color: blue; */
+}
+.bottom{
+    margin-bottom: 15px;
+    background-color: rgb(255,255,255, .3);
+    width: 25em;
+    height: 7em;
+    position: absolute;
+    bottom: 0;
+    border-radius: 50px;
+    
+}
+.appGrid{
+    display: flex;
+    flex-wrap: wrap;
+  justify-content: space-between; 
+  align-items: center;
+  height: 75%;
+    margin: 10px 20px;
+}
+.bottomIcons{
+    display:flex;
+    padding: 5px;
+    justify-content: space-between;
+    margin: 2px 8%;
+}
+
+#overlay {
+    position: absolute;
+    top: -2vh;
+    left: 0;
+    width: 30em;
+    height: 60em;
+    background-color: rgba(0, 0, 0, .8);
+    opacity: 0;
+    z-index: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    z-index: 9;
+    display: block;
+  }
+
+@media only screen and (max-device-width: 480px) {
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
+    .PhoneScreen{
+        width: 20em;
+        height: 40em;
+    }
+    .appGrid{
+        margin: 0px 10px;
+    }
+    .bottom{
+        width: 16em;
+        height: 5.5em;
+    }
+    .bottomIcons{
+        padding: 7px;
+    }
+
+ }

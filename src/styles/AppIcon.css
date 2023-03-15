@@ -1,0 +1,64 @@
+.appIcon{
+    height: 0px;
+    width: 100px;
+    flex-basis: 100px;
+    line-height: 1;
+    color:white;
+    /* font-size: 125%; */
+    position: relative;
+    flex-basis: 25%;
+  max-width: 25%;
+  text-align: center;
+  transition: transform 1s;
+}
+.center{
+    z-index: 999;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    position: fixed;
+    
+    
+}
+img{
+    margin: 0px;
+
+}
+
+.appIcon:hover{
+    -webkit-filter: brightness(70%);
+}
+.notification {
+    
+	border-radius: 20px;
+	background: linear-gradient(top, #FF3019 0, #CF0404 75%);
+	
+	font-size: 20px;
+	display: block;
+	background: #FF3019;
+	background-repeat: repeat-x;
+	background: linear-gradient(top, #FF3019 0, #CF0404 75%);
+	position: absolute;
+	right: -5px;
+	
+	color: white;
+	padding: 4px 6px;
+	top:-10px;
+	/* line-height: 90%; */
+	text-shadow: none;
+}
+@media only screen and (max-device-width: 480px) {
+    img{
+        height:60px;
+        width:60px;
+
+    }
+    .appIcon{
+        font-size: 60%;
+        flex-basis: 25%;
+        max-width: 25%;
+    }
+    .notification {
+        font-size: 12px;
+    }
+}
