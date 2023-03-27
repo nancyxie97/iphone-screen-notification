@@ -65,15 +65,17 @@
 
 #overlay {
     position: absolute;
-    top: -2vh;
-    left: 0;
+    top: -35px;
+    left: -15åpx;
     width: 30em;
-    height: 60em;
+    height: 61em;
     background-color: rgba(0, 0, 0, .8);
     opacity: 0;
     z-index: 0;
     transition: opacity 0.3s ease-in-out;
     display: none;
+    border-radius: 45px;
+    
   }
   
   #overlay.active {
